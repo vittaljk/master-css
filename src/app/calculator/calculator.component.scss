@@ -1,0 +1,42 @@
+.container {
+    width: 300px;
+    margin: 50px auto;
+    border: 1px solid;
+    border-radius: 3px;
+}
+
+.result {
+    border-bottom: 1px solid;
+    height: 50px;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-right: 10px;
+}
+
+.btn-container {
+    margin: 10px;
+    div {
+        height: 50px;
+        border: 1px solid;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        background: #ccc;
+        color: #ffffff;
+    }
+    .green {
+        background-color: #7abb7a;
+    }
+    .blue {
+        background-color: #5a5abb
+    }
+    display: grid;
+    grid-gap: 5px;
+    grid-template-columns: repeat(4, 1fr);
+}
+
+.span-3 {
+    grid-column-end: span 3;
+}
+
