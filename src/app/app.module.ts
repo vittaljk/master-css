@@ -10,6 +10,9 @@ import { GridTemplateAreaComponent } from "./grid-template-area/grid-template-ar
 import { AutoFitComponent } from './auto-fit/auto-fit.component';
 import { ImagesGridComponent } from './images-grid/images-grid.component';
 import { CalculatorComponent } from './calculator/calculator.component';
+import { ElevatorComponent } from './elevator/elevator.component';
+import { StackOverflowComponent } from './stack-overflow/stack-overflow.component';
+import { MusicAppComponent } from './music-app/music-app.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -20,7 +23,10 @@ const routes: Routes = [
     { path: 'template-area', component: GridTemplateAreaComponent },
     { path: 'auto-fit', component: AutoFitComponent },
     { path: 'image-grid', component: ImagesGridComponent },
-    { path: 'calculator', component: CalculatorComponent }
+    { path: 'calculator', component: CalculatorComponent },
+    { path: 'elevator', component: ElevatorComponent },
+    { path: 'stackoverflow', component: StackOverflowComponent },
+    { path: 'music-app', component: MusicAppComponent }
 ];
 
 @NgModule({
@@ -33,7 +39,10 @@ const routes: Routes = [
         GridTemplateAreaComponent,
         AutoFitComponent,
         ImagesGridComponent,
-        CalculatorComponent
+        CalculatorComponent,
+        ElevatorComponent,
+        StackOverflowComponent,
+        MusicAppComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes)],
     providers: [],
