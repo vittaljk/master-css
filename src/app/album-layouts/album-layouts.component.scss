@@ -1,0 +1,18 @@
+.albums {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(375px, 1fr));
+    width: 90%;
+    margin: auto;
+    grid-gap: 10px;
+}
+
+.album {
+    display: grid;
+    grid-template-columns: 100px 1fr;
+    grid-gap: 10px;
+    align-items: center;
+}
+
+.album__artwork {
+    width: 100%;
+}

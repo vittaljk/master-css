@@ -13,6 +13,9 @@ import { CalculatorComponent } from './calculator/calculator.component';
 import { ElevatorComponent } from './elevator/elevator.component';
 import { StackOverflowComponent } from './stack-overflow/stack-overflow.component';
 import { MusicAppComponent } from './music-app/music-app.component';
+import { MasterGridComponent } from './master-grid/master-grid.component';
+import { AlbumLayoutsComponent } from './album-layouts/album-layouts.component';
+import { CardioComponent } from './cardio/cardio.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -26,7 +29,10 @@ const routes: Routes = [
     { path: 'calculator', component: CalculatorComponent },
     { path: 'elevator', component: ElevatorComponent },
     { path: 'stackoverflow', component: StackOverflowComponent },
-    { path: 'music-app', component: MusicAppComponent }
+    { path: 'music-app', component: MusicAppComponent },
+    { path: 'master-grid', component: MasterGridComponent},
+    { path: 'albumn-layout', component: AlbumLayoutsComponent },
+    { path: 'cardio', component: CardioComponent}
 ];
 
 @NgModule({
@@ -42,7 +48,10 @@ const routes: Routes = [
         CalculatorComponent,
         ElevatorComponent,
         StackOverflowComponent,
-        MusicAppComponent
+        MusicAppComponent,
+        MasterGridComponent,
+        AlbumLayoutsComponent,
+        CardioComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes)],
     providers: [],
