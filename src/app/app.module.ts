@@ -16,6 +16,10 @@ import { MusicAppComponent } from './music-app/music-app.component';
 import { MasterGridComponent } from './master-grid/master-grid.component';
 import { AlbumLayoutsComponent } from './album-layouts/album-layouts.component';
 import { CardioComponent } from './cardio/cardio.component';
+import { FlexFundamentalsComponent } from './flex-fundamentals/flex-fundamentals.component';
+import { FlexNavbarComponent } from './flex-navbar/flex-navbar.component';
+import { AngularFontAwesomeModule } from 'angular-font-awesome';
+import { FlexMobileLayoutComponent } from './flex-mobile-layout/flex-mobile-layout.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -32,7 +36,10 @@ const routes: Routes = [
     { path: 'music-app', component: MusicAppComponent },
     { path: 'master-grid', component: MasterGridComponent},
     { path: 'albumn-layout', component: AlbumLayoutsComponent },
-    { path: 'cardio', component: CardioComponent}
+    { path: 'cardio', component: CardioComponent },
+    { path: 'flex-fundamentals', component: FlexFundamentalsComponent },
+    { path: 'flex-navbar', component: FlexNavbarComponent },
+    { path: 'flex-mobile-layout', component: FlexMobileLayoutComponent }
 ];
 
 @NgModule({
@@ -51,9 +58,12 @@ const routes: Routes = [
         MusicAppComponent,
         MasterGridComponent,
         AlbumLayoutsComponent,
-        CardioComponent
+        CardioComponent,
+        FlexFundamentalsComponent,
+        FlexNavbarComponent,
+        FlexMobileLayoutComponent
     ],
-    imports: [BrowserModule, RouterModule.forRoot(routes)],
+    imports: [BrowserModule, RouterModule.forRoot(routes), AngularFontAwesomeModule],
     providers: [],
     bootstrap: [AppComponent]
 })
