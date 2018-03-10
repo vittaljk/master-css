@@ -20,6 +20,7 @@ import { FlexFundamentalsComponent } from './flex-fundamentals/flex-fundamentals
 import { FlexNavbarComponent } from './flex-navbar/flex-navbar.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FlexMobileLayoutComponent } from './flex-mobile-layout/flex-mobile-layout.component';
+import { CodepenComponent } from './codepen/codepen.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -39,7 +40,8 @@ const routes: Routes = [
     { path: 'cardio', component: CardioComponent },
     { path: 'flex-fundamentals', component: FlexFundamentalsComponent },
     { path: 'flex-navbar', component: FlexNavbarComponent },
-    { path: 'flex-mobile-layout', component: FlexMobileLayoutComponent }
+    { path: 'flex-mobile-layout', component: FlexMobileLayoutComponent },
+    { path: 'codepen', component: CodepenComponent }
 ];
 
 @NgModule({
@@ -61,7 +63,8 @@ const routes: Routes = [
         CardioComponent,
         FlexFundamentalsComponent,
         FlexNavbarComponent,
-        FlexMobileLayoutComponent
+        FlexMobileLayoutComponent,
+        CodepenComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes), AngularFontAwesomeModule],
     providers: [],
