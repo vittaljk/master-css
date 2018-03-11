@@ -21,6 +21,8 @@ import { FlexNavbarComponent } from './flex-navbar/flex-navbar.component';
 import { AngularFontAwesomeModule } from 'angular-font-awesome';
 import { FlexMobileLayoutComponent } from './flex-mobile-layout/flex-mobile-layout.component';
 import { CodepenComponent } from './codepen/codepen.component';
+import { ResponsiveWebsiteComponent } from './responsive-website/responsive-website.component';
+import { FullyBleedBlogLayoutComponent } from './fully-bleed-blog-layout/fully-bleed-blog-layout.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -41,7 +43,9 @@ const routes: Routes = [
     { path: 'flex-fundamentals', component: FlexFundamentalsComponent },
     { path: 'flex-navbar', component: FlexNavbarComponent },
     { path: 'flex-mobile-layout', component: FlexMobileLayoutComponent },
-    { path: 'codepen', component: CodepenComponent }
+    { path: 'codepen', component: CodepenComponent },
+    { path: 'responsive', component: ResponsiveWebsiteComponent },
+    { path: 'blog', component: FullyBleedBlogLayoutComponent }
 ];
 
 @NgModule({
@@ -64,7 +68,9 @@ const routes: Routes = [
         FlexFundamentalsComponent,
         FlexNavbarComponent,
         FlexMobileLayoutComponent,
-        CodepenComponent
+        CodepenComponent,
+        ResponsiveWebsiteComponent,
+        FullyBleedBlogLayoutComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes), AngularFontAwesomeModule],
     providers: [],

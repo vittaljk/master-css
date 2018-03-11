@@ -1,0 +1,62 @@
+.wrapper {
+    width: 90%;
+    margin: 60px auto;
+}
+
+button {
+    background: #ffc600;
+    border: 0;
+    padding: 10px 20px;
+}
+
+img {
+    max-width: 100%;
+}
+
+.hero {
+    grid-area: hero;
+    min-height: 400px;
+    background: white url('../../assets/images/taco.jpg');
+    background-size: cover;
+    background-position: bottom right;
+    display: flex;
+    justify-content: center;
+    align-items: flex-start;
+    flex-direction: column;
+    padding: 50px;
+}
+
+.hero > * {
+    background: yellow;
+}
+
+.top {
+    display: grid;
+    grid-gap: 20px;
+    grid-template-areas:
+        "hero hero cta1"
+        "hero hero cta2"
+}
+
+.cta {
+    background: yellow;
+    display: grid;
+    align-items: center;
+    justify-items: center;
+    align-content: center;
+    p {
+        margin: 0;
+    }
+}
+
+.cta1 {
+    grid-area: cta1;
+}
+
+.cta2 {
+    grid-area: cta2;
+}
+
+.price {
+    font-size: 60px;
+}
