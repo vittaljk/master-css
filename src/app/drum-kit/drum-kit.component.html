@@ -1,0 +1,9 @@
+<div class="keys">
+    <div *ngFor="let key of keys" attr.data-key="{{ key.key}}" class="key">
+        <kbd>{{ key.alphabet }}</kbd>
+        <span class="sound">{{ key.sound }}</span>
+    </div>
+</div>
+
+<audio *ngFor="let key of keys" attr.data-key="{{ key.key }}" src="assets/sounds/{{key.sound}}.wav"></audio>
+

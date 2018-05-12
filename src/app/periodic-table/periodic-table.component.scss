@@ -1,0 +1,28 @@
+.periodic-table-container {
+    width: 80%;
+    margin:  100px auto;
+}
+
+.periodic-table {
+    display: grid;
+    grid-template-columns: repeat(18, 1fr);
+    grid-gap: 10px;
+    background: #3f474f;
+    padding: 100px;
+}
+
+.item2 {
+    grid-column: 3 / -2;
+}
+
+.purple {
+    background-color: rgba(211,144,198, .5);
+    color: white;
+    border: 2px solid rgb(211,144,198);
+}
+
+.yellow {
+    background-color: rgba(247,219,22, .5);
+    color: white;
+    border: 2px solid rgb(247,219,22);
+}

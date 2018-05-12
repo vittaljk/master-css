@@ -23,6 +23,8 @@ import { FlexMobileLayoutComponent } from './flex-mobile-layout/flex-mobile-layo
 import { CodepenComponent } from './codepen/codepen.component';
 import { ResponsiveWebsiteComponent } from './responsive-website/responsive-website.component';
 import { FullyBleedBlogLayoutComponent } from './fully-bleed-blog-layout/fully-bleed-blog-layout.component';
+import { DrumKitComponent } from './drum-kit/drum-kit.component';
+import { PeriodicTableComponent } from './periodic-table/periodic-table.component';
 
 const routes: Routes = [
     { path: '', redirectTo: 'home', pathMatch: 'full' },
@@ -45,7 +47,9 @@ const routes: Routes = [
     { path: 'flex-mobile-layout', component: FlexMobileLayoutComponent },
     { path: 'codepen', component: CodepenComponent },
     { path: 'responsive', component: ResponsiveWebsiteComponent },
-    { path: 'blog', component: FullyBleedBlogLayoutComponent }
+    { path: 'blog', component: FullyBleedBlogLayoutComponent },
+    { path: 'drum-kit', component: DrumKitComponent },
+    { path: 'periodic-table', component: PeriodicTableComponent }
 ];
 
 @NgModule({
@@ -70,7 +74,9 @@ const routes: Routes = [
         FlexMobileLayoutComponent,
         CodepenComponent,
         ResponsiveWebsiteComponent,
-        FullyBleedBlogLayoutComponent
+        FullyBleedBlogLayoutComponent,
+        DrumKitComponent,
+        PeriodicTableComponent
     ],
     imports: [BrowserModule, RouterModule.forRoot(routes), AngularFontAwesomeModule],
     providers: [],
